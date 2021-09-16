@@ -314,5 +314,6 @@ TSWLatexianTemp*
 # Ignore all local history of files
 .history
 .ionide
+*.pdf
 
 # End of https://www.toptal.com/developers/gitignore/api/latex,visualstudiocode
