@@ -1,0 +1,23 @@
+% !TeX program = xelatex
+\input{template/packages}
+\usepackage{template/template}
+
+\begin{document}
+	\def\ci{\perp\!\!\!\perp}
+
+	% header{<Assignment-Number>}{<Assignment-Title>}{<Deadline-Date>}{<Gathered-by>}{<Supervised-by>}
+	\header{\small
+		پاسخ تمرین چهارم، بخش اول
+	}{موضوع}{-}{}{}
+	\input{template/info}
+
+	% partheader{<Part-Name>}{<Part-Total-Score>}
+	\partheader{سوالات}{90}
+	\begin{enumerate}
+		% question{<Question-TexFile-Path>}{<Question-Score>}
+		\question{solution/th1}{10}
+		\question{solution/th2}{15}
+		\question{solution/th3}{15}
+	\end{enumerate}
+
+\end{document}
