@@ -1,4 +1,5 @@
 \documentclass[a4paper,12pt]{article}
+\usepackage[bottom]{footmisc}
 \usepackage{subcaption}
 \usepackage{listings}
 \usepackage{xcolor}
@@ -31,16 +32,16 @@ anchorcolor = blue]{hyperref}
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{neuralnetwork}
-
+\usepackage{tkz-graph}
 \hypersetup{
 	colorlinks=true,
-	linkcolor=cyan,
+	linkcolor=red,
 	filecolor=blue,      
 	urlcolor=magenta,
 }
 
 
-
+\usetikzlibrary{arrows, positioning}
 \usepackage{xepersian}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -78,9 +79,13 @@ anchorcolor = blue]{hyperref}
 
 \addtolength{\textheight}{0.5in}
 \addtolength{\topmargin}{-0.25in}
-
-\makeatletter
-\def\hrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
-\makeatother
 \defpersianfont\iranic[Path="./template/fonts/",Scale=1]{XB Zar.ttf} 	
 \newcommand{\IP}{\mathbb{P}}
+
+\makeatletter
+\def\LTRfootnote{\@ifnextchar[\@xLTRfootnote{\stepcounter\@mpfn
+		\protected@xdef\@thefnmark{\persianfont\thempfn}%
+		\@footnotemark\@LTRfootnotetext}}
+\makeatother	
+\setdigitfont[Path="./template/fonts/",Scale=1]{XB Zar.ttf} 
+\setmathdigitfont[Path="./template/fonts/",Scale=1]{XB Zar.ttf} 
