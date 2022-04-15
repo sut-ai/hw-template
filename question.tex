@@ -1,6 +1,7 @@
 % !TeX program = xelatex
 \input{template/packages}
 \usepackage{template/template}
+\newcommand{\hidesolutions}{}
 
 \begin{document}
 	\def\ci{\perp\!\!\!\perp}
@@ -15,7 +16,10 @@
 	\begin{enumerate}
 		% question{<Question-TexFile-Path>}{<Question-Score>}
 		\question{questions/th1}{25}
+		\solution{solution/th1}{}
 		\question{questions/th2}{20}
+		\solution{solution/th2}{}
 		\question{questions/th3}{20}
+		\solution{solution/th3}{}
 	\end{enumerate}
 \end{document}
